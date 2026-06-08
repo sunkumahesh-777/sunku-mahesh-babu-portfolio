@@ -85,6 +85,16 @@
   grid-template-columns: .85fr 1.15fr;
 }
 
+.work {
+  display: flex;
+  flex-direction: column;
+}
+
+.work .section-heading { order: 0; }
+.work .cloud-project { order: 1; margin-top: 0; margin-bottom: 22px; }
+.work .ride-project { order: 2; }
+.work .next-project { order: 3; }
+
 .kitchen-visual {
   background: #e96836;
 }
@@ -230,6 +240,9 @@
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
+
+.cloud-repo { order: 1; }
+.ride-repo { order: 2; }
 
 .repo-card {
   position: relative;
